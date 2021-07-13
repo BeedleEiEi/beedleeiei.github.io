@@ -34,12 +34,27 @@
             <span>My name is 'Beedle'</span>
             <!-- <div class="card">Hello World</div> -->
             <!-- <div class="card">Hello World</div> -->
-            <div class="card">Nice to meet you</div>
+            <a href="javascript:greeting()">
+                <div class="card">
+                    What is your name?
+                </div>
+            </a>
+
         </div>
+        <div id="your" style="font-size: 20px; margin-left: 20px; margin-top: -20%; z-index: 99;"></div>
 
     </div>
 
 </body>
 
+<script>
+    function greeting() {
+        var name = prompt("Hi what is your name :)");
+
+        // alert("Oh you're " + name + " nice to meet you!!")
+
+        document.getElementById("your").innerText = "Hi " + name + "! Nice to meet you";
+    }
+</script>
 
 </html>
